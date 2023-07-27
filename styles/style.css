@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+/* ---------- header ---------- */
+header {
+  height: 700px;
+  background: url(/images/header_bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  background-position: 50%;
+}
+
+.bg-blackout {
+  width: 100%;
+  height: 100%;
+  background: #404149de;
+  position: relative;
+}
+
+.header-text,
+.exp-in-construction {
+  position: absolute;
+}
+
+.header-text {
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+h1,
+.header-text > p {
+  text-align: center;
+  color: #fff;
+  width: 734px;
+  margin: 20px;
+}
+
+h1 {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 64px;
+}
+
+.header-text > p {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.exp-in-construction {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 230px;
+  width: 800px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 4 cards */
+.card-of-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  color: #f7654a;
+  font-size: 72px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.age {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.market {
+  color: #999;
+}
+
+/* ---------- id main ---------- */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* ----- big projects ----- */
+.big-projects {
+  width: 1000px;
+  height: 600px;
+  margin: 100px;
+}
+.big-projects > h3 {
+  margin-bottom: 50px;
+}
+#cards-of-big-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-of-big-project {
+  width: 300px;
+  text-align: left;
+}
+.card-of-big-project > img {
+  height: 320px;
+  width: 300px;
+}
+
+.line {
+  width: 55px;
+  height: 6px;
+  margin: 35px 0 10px 0;
+  background: #f7654a;
+}
+.card-of-big-project > h3 {
+  font-size: 24px;
+}
+.card-of-big-project > p {
+  color: #999;
+  font-weight: 400;
+}
+
+/* ----- smart-projects ----- */
+.smart-projects {
+  width: 100%;
+  height: 160px;
+  background: #f7654a;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text > h3 {
+  font-size: 47px;
+}
+.text > h4 {
+  font-size: 23px;
+}
+.button {
+  border: none;
+  width: 175px;
+  height: 50px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ----- about-us ------ */
+.about-us {
+  width: 1000px;
+  margin: 100px 0;
+}
+.about-us > h3 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 50px;
+}
+.container-with-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card-about-us {
+  width: 300px;
+  height: 220px;
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.fa-city{
+    color: #f7654a;
+    font-size: 64px;
+}
+
+.card-about-us > p {
+font-size: 27px;
+font-weight: 500;
+}
+
+/* ----- contacts ----- */
+.contacts{
+    width: 1000px;
+}
+
+.flex-conteiner-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+.contact-block{
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-block > i {
+    font-size: 48px;
+    color: #f7654a;
+}
+.span-header{
+    color: #999;
+    font-size: 24px;
+    font-weight: 500;
+}
+.info{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ---------- footer ---------- */
+footer {
+  position: sticky;
+  top: 100%;
+  background: #404149;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffffc9;
+  font-size: 16px;
+  font-weight: 300;
+}
