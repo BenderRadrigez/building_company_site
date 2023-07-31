@@ -1,0 +1,64 @@
+@media (min-width: 1250px) {
+    :root{
+      --basic-max-width-block: 1000px;
+    }
+  }
+  
+  @media (max-width: 1250px) {
+    :root{
+      --basic-max-width-block: 800px;
+    }
+    .big-projects {
+      margin: 50px;
+    }
+    #cards-of-big-projects {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card-of-big-project {
+      width: 250px;
+    }
+    .card-of-big-project > img {
+      height: 260px;
+      width: 250px;
+    }
+    
+    .container-with-cards {
+      justify-content: center;
+      gap: 20px;
+    }
+    .card-about-us {
+      width: 250px;
+      height: 190px;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    :root{
+      --basic-max-width-block: 600px;
+    }
+    .big-projects {
+      height: 1100px;
+    }
+    .card-of-big-project {
+      width: 250px;
+    }
+    .card-of-big-project > img {
+      height: 260px;
+      width: 250px;
+    }
+    .line {
+      margin: 25px 0 10px 0;
+    }
+    .container-with-cards {
+      justify-content: center;
+      gap: 20px;
+    }
+    .card-about-us {
+      width: 270px;
+      height: 200px;
+      gap: 15px;
+    }
+  }
