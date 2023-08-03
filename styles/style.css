@@ -14,66 +14,60 @@
   text-decoration: none;
 }
 
+html{
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
 body {
   position: relative;
-  height: 100vh;
-  width: 100%;
   min-width: 730px;
+  max-width: 1900px;
+  width: 100vw;
+  background: #fff;
 }
 
 /* ---------- header ---------- */
 header {
-  height: 700px;
-  background: url(/images/header_bg.jpeg);
+  background: url(/images/header.png);
   background-repeat: no-repeat;
-  background-size: 2000px;
-  background-position: 50%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 530px;
 }
 
-.bg-blackout {
-  width: 100%;
-  height: 100%;
-  background: #404149de;
-  position: relative;
-}
-
-.header-text,
-.exp-in-construction {
-  position: absolute;
-}
 
 .header-text {
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-}
-
-h1,
-.header-text > p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: #fff;
-  width: 734px;
-  margin: 20px;
 }
 
 h1 {
   font-weight: 500;
   letter-spacing: 1.5px;
-  font-size: 64px;
+  font-size: 2.5rem;
+  margin-bottom: .5%;
+  min-width: 550px;
 }
 
 .header-text > p {
-  font-size: 20px;
+  font-size: calc(1rem * 1.23vw);
   font-weight: 400;
   text-transform: uppercase;
+  
+  min-width: 550px;
 }
 
 .exp-in-construction {
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  height: 230px;
-  width: var(--basic-max-width-block);
+  width: 65%;
+  aspect-ratio: 4/1;
   background: #fff;
   display: flex;
   justify-content: space-around;
@@ -89,13 +83,13 @@ h1 {
 
 .number {
   color: var(--basic-orange-clr);
-  font-size: 72px;
+  font-size: 3.5rem;
   text-align: center;
   font-weight: 500;
 }
 
 .age {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -113,8 +107,7 @@ h1 {
 /* ----- big projects ----- */
 .big-projects {
   width: var(--basic-max-width-block);
-  height: 600px;
-  margin: 100px;
+  margin: 7vw 0;
 }
 .big-projects > h3 {
   font-size: 36px;
@@ -123,7 +116,8 @@ h1 {
 #cards-of-big-projects {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
 }
 .card-of-big-project {
   width: 300px;
@@ -151,23 +145,27 @@ h1 {
 /* ----- smart-projects ----- */
 .smart-projects {
   width: 100%;
-  height: 160px;
+  min-width: 730px;
   background: var(--basic-orange-clr);
   color: #fff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 25vw;
+}
+.text{
+  text-align: start;
 }
 .text > h3 {
-  font-size: 47px;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 .text > h4 {
-  font-size: 23px;
+  font-size: 1.1rem;
 }
 .button {
   border: none;
-  width: 175px;
-  height: 50px;
+  padding: 15px;
   background: #fff;
   font-size: 15px;
   font-weight: 500;
@@ -176,26 +174,28 @@ h1 {
 
 /* ----- about-us ------ */
 .about-us {
-  width: var(--basic-max-width-block);
-  margin: 100px 0;
+  width: 70vw;
+  max-width: 900px;
+  min-width: 450px;
+  margin: 5vw 0;
 }
 .about-us > h3 {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 500;
-  margin: 50px;
+  margin: 50px 0;
 }
 .container-with-cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
 }
 
 .card-about-us {
+  flex: 1;
   color: #000;
-  width: 300px;
-  height: 220px;
+  padding: 20px;
   background: #f7f7f7;
   display: flex;
   flex-direction: column;
@@ -215,7 +215,7 @@ h1 {
 
 /* ----- contacts ----- */
 .contacts {
-  width: var(--basic-max-width-block);
+  max-width: 100%;
 }
 
 .flex-conteiner-contacts {
@@ -225,12 +225,12 @@ h1 {
   margin: 50px 0;
 }
 .contact-block {
-  width: 200px;
-  height: 160px;
+  width: 20vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 0 5px;
 }
 .contact-block > i {
   font-size: 48px;
@@ -252,7 +252,7 @@ footer {
   position: sticky;
   top: 100%;
   background: #404149;
-  height: 80px;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;

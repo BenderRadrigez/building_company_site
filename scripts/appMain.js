@@ -19,8 +19,7 @@ const createNewCard = (iconClass1, iconClass2, link, textP) => {
   const newP = document.createElement("p");
   newP.textContent = textP;
 
-  newA.appendChild(newIcon);
-  newA.appendChild(newP);
+  newA.append(newIcon, newP);
   return newA;
 };
 

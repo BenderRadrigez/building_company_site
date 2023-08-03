@@ -9,9 +9,7 @@ const makeCardOfExp = () => {
   const newMarket = createElementAndAddClass("span", "market"); 
   newMarket.textContent = "на рынке";
 
-  newDiv.appendChild(newNumber);
-  newDiv.appendChild(newAge);
-  newDiv.appendChild(newMarket);
+  newDiv.append(newNumber, newAge, newMarket);
   return newDiv;
 }
 
