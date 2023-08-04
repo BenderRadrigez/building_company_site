@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>window for call</title>
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/formCalling.css" />
+  </head>
+  <body>
+    <div class="window">
+      <h3>впишите ваше имя,<br>а так же номер и почту</h3>
+      <p class="message-for-call">пасхалка: скажите оператору "ключ" и получите скидку</p>
+      <input type="text" placeholder="имя" class="name-inpt" />
+      <input type="tel" placeholder="номер телефона" class="tel-inpt" />
+      <input type="email" placeholder="email" class="email-inpt" />
+
+      <p>выберите тему консультации:</p>
+      <select name="themes" class="theme-for-calling">
+        <option value="usr-question">свой вопрос</option>
+        <option value="1">строительство дома под ключ</option>
+        <option value="2">реконструкция здания</option>
+        <option value="3">внутренняя отделка</option>
+      </select>
+      <p>или напишите свой вопрос</p>
+      <input type="text" placeholder="ваш вопрос" class="questin-inpt"/>
+
+      <button class="save-btn">запросить обратную связь</button>
+      <p class="warning-text">через несколько секунд вы будете перенаправлены на обратную страницу автоматически</p>
+    </div>
+
+    <script src="scripts/callingForm.js"></script>
+  </body>
+</html>

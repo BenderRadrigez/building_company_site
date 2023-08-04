@@ -45,7 +45,9 @@ const makeArray = (lengthArray) => {
 const makerCards = (square, array) => {
   for (let i = 0; i < array.length; i++) {
     let obj = array[i];
-    square.appendChild(createNewCard(obj.iconClass1, obj.iconClass2, obj.link, obj.textP));
+    square.appendChild(
+      createNewCard(obj.iconClass1, obj.iconClass2, obj.link, obj.textP)
+    );
   }
 };
 

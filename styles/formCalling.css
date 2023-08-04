@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000000af;
+}
+.window{
+    width: 600px;
+    aspect-ratio: 1;
+    background: #fff;
+    border: 5px solid var(--basic-orange-clr);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.window > h3{
+    font-size: 1.3rem;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.message-for-call{
+    color: #fff;
+}
+.window > input,
+.theme-for-calling {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid var(--basic-orange-clr);
+    outline: none;
+    border-radius: 7px;
+}
+
+.save-btn{
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background: var(--basic-orange-clr);
+    color: #fff;
+    cursor: pointer;
+}
+.warning-text{
+    font-size: 15px;
+    color: #fff;
+}
