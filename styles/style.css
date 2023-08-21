@@ -7,7 +7,7 @@ html{
 
 body {
   position: relative;
-  min-width: 730px;
+  min-width: 600px;
   max-width: 1900px;
   width: 100vw;
   background: #fff;
@@ -22,7 +22,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 530px;
 }
 
 
@@ -40,6 +39,7 @@ h1 {
   font-size: 2.5rem;
   margin-bottom: .5%;
   min-width: 550px;
+  max-width: 670px;
 }
 
 .header-text > p {
@@ -130,7 +130,6 @@ h1 {
 /* ----- smart-projects ----- */
 .smart-projects {
   width: 100%;
-  min-width: 730px;
   background: var(--basic-orange-clr);
   color: #fff;
   display: flex;
