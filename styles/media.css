@@ -1,6 +1,6 @@
 @media (min-width: 1250px) {
   :root {
-    --basic-max-width-block: 55vw;
+    --basic-max-width-block: 55%;
   }
   .header-text {
     margin-top: 13vw;
@@ -67,5 +67,55 @@
   }
   .smart-projects {
     gap: 10vw;
+  }
+  .flex-conteiner-contacts,
+  footer{
+    flex-direction: column;
+  }
+  .contact-block {
+    width: 80vw;
+    margin: 0 5px;
+  }
+}
+
+
+@media (max-width: 599px) {
+  :root {
+    --basic-max-width-block: 300px;
+  }
+  .header-text {
+    margin-top: 2vh;
+  }
+  .exp-in-construction{
+    width: 100%;
+  }
+  .big-projects {
+    height: 100%;
+  }
+  .card-of-big-project {
+    width: 250px;
+  }
+  .card-of-big-project > img {
+    height: 260px;
+    width: 250px;
+  }
+  .line {
+    margin: 25px 0 10px 0;
+  }
+  .smart-projects {
+    padding: 10px;
+    flex-direction: column;
+  }
+  .text{
+    text-align: center;
+  }
+  
+  .container-with-cards{
+    width: 80%;
+    margin: auto;
+  }
+  .card-about-us{
+    width: 80%;
+    margin: 0;
   }
 }
